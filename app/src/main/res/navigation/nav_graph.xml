@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_contactList">
+
+    <fragment
+        android:id="@+id/nav_contactList"
+        android:name="com.ngapp.contentprovidercontacts.ui.list.ContactListFragment"
+        android:label="@string/list_contact"
+        tools:layout="@layout/fragment_list_contact" >
+        <action
+            android:id="@+id/action_contactsFragment_to_contactsDetailed"
+            app:destination="@id/nav_contactDetail"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_contactList" />
+        <action
+            android:id="@+id/action_contactListFragment_to_contactAddFragment"
+            app:destination="@id/nav_contactAdd"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_contactList" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contactDetail"
+        android:name="com.ngapp.contentprovidercontacts.ui.detail.ContactDetail"
+        android:label="@string/detail_contact"
+        tools:layout="@layout/fragment_detail_contact">
+        <argument
+            android:name="currentContact"
+            app:argType="com.ngapp.contentprovidercontacts.data.Contact" />
+        <action
+            android:id="@+id/action_contactDetail_to_contactListFragment"
+            app:destination="@id/nav_contactList"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_contactList"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contactAdd"
+        android:name="com.ngapp.contentprovidercontacts.ui.add.ContactAddFragment"
+        android:label="@string/add_contact"
+        tools:layout="@layout/fragment_add_contact" >
+        <action
+            android:id="@+id/action_contactAddFragment_to_contactListFragment"
+            app:destination="@id/nav_contactList"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_contactList"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

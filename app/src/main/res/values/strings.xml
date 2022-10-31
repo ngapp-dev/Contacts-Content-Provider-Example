@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Contacts Content Provider</string>
+
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="permission_contacts_rationale">Contact permissions are required to access database</string>
+    <string name="show_contacts">Show contact list</string>
+    <string name="permission_contacts_denied">Contact permissions have been denied. Please consider providing it to access your contacts!</string>
+    <string name="permission_contacts_never_ask_again">Contact permissions have been denied and will not be requested again.</string>
+    <string name="on_delete_alert_dialog">Are you sure you want to delete the contact?</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+
+    <string name="detail_contact">Contact Detail</string>
+    <string name="list_contact">Contact list</string>
+    <string name="add_contact">Add contact</string>
+    <!--start Contact Add Fragment -->
+    <string name="nameEditText">Name</string>
+    <string name="surnameEditText">Surname</string>
+    <string name="phoneEditText">Phone</string>
+    <string name="emailEditText">Email</string>
+    <string name="saveButton">Save</string>
+
+    <string name="add_contacts">Add to contact list</string>
+    <string name="addNameError">Enter your name</string>
+    <string name="addSurnameError">Enter your surname</string>
+    <string name="addPhoneError">Enter your phone number</string>
+    <string name="delete">Delete</string>
+
+    <!--end Contact Add Fragment -->
+    <string name="link_edit_text">Вставьте ссылку</string>
+    <string name="dialog_bottom_sheet_download">Скачать файл</string>
+    <string name="files_list">Список файлов</string>
+    <string name="save_contact_error">Save contact error</string>
+    <string name="delete_error">Delete Error</string>
+</resources>
